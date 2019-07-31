@@ -8,6 +8,8 @@
 
 <head>
 	<title>FinTech Notes</title>
+	
+	
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -107,11 +109,11 @@
 
 
 		<body>
-			<form method="POST" action="/add">
+			<form method="POST" action="/add" enctype=multipart/form-data>
 				<label for="notesPicture">Please upload your notes here </label>
-				<input type="file" id="notes" name="notesPicture" accept="image/png, image/jpeg, image/JPG">
+				<input type="file" id="notesPicture" name="notesPicture" accept="image/png, image/jpeg, image/JPG">
 				<label for="name"><h5>Name:</h5></label>
-				<input type="text" name="name" value="">
+				<input type="text" name="name">
 				<label for="description"><h5>Please give a short synopsis:</h5></label>
 				<input type="text" name="description" value="">
 				<input type="submit" value="Submit">

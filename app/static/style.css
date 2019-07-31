@@ -22,6 +22,9 @@
     
     
 }
+.card {
+    padding:80px;
+}
 
 .tech{
     background-color:#1E59E8;
@@ -34,4 +37,7 @@
 .math{
     background-color: #FF3827
 }
+
+.login{
+    background-color:#E86FDF;
 }
