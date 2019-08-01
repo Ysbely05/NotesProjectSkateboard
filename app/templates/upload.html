@@ -1,29 +1,41 @@
 <!DOCTYPE HTML>
+<html>
 
 <head>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
-    <h2>Select a file to upload</h2>
-    <p>
-        {% with messages = get_flashed_messages() %} {% if messages %}
-        <ul class=flashes>
-            {% for message in messages %}
-            <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %} {% endwith %}
-    </p>
-    <form class = "page" method="POST" action="/add" enctype="multipart/form-data"> 
-        <label for="file">Please upload your notes here </label>
-        <input type="file" id="file" name="file" autocomplete="off" required>
-        <label for="name"><h5>Name:</h5></label>
-        <input type="text" name="name">
-        <label for="description"><h5>Please give a short synopsis:</h5></label>
-        <input type="text" name="description">
-        <input type="submit" value="Submit">
-    </form>
 
+<body id="upload">
+    <div>
+        <h2>Select a file to upload</h2>
+        <p>
+            {% with messages = get_flashed_messages() %} {% if messages %}
+            <ul class=flashes>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %} {% endwith %}
+        </p>
+        <form class="page" method="POST" action="/add" enctype="multipart/form-data">
+            <label for="file"><h2>Please upload your notes here </h2></label>
+            <input type="file" id="file" name="file" autocomplete="off" required>
+            <label for="name"><h5>Name:</h5></label>
+            <input type="text" name="name">
+            <label for="description"><h5>Please give a short synopsis:</h5></label>
+            <input type="text" name="description">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
-o
+
+</html>

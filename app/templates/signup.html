@@ -1,22 +1,35 @@
 <!DOCTYPE HTML>
-    <html>
-    <Title> Sign up </Title>
-    </head>
+<html>
 
-    <body>
-        <h1> Welcome {{nameDisplay}}!</h1>
-        <div class = "login">
-    </form>
-        <form class = "login" action="/signup" method="POST">
-            <label for="name">Name</label>
+<head>
+    <title> Sign up </title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body >
+    <div id = "login">
+    <h1> Welcome {{nameDisplay}}!</h1>
+    <div >
+
+
+        <form id="input-feild" class="login" action="/signup" method="POST">
+            <label class="login" for="name">Name</label>
             <input type="text" name="username">
             <label for="password">Password</label>
             <input type="password" name="password">
             <input type="submit" value="Sign Up">
         </form>
-        </div>
-    </body>
+    </div>
+    </div>
+</body>
 
-    </html>
+</html>
 
-    <head>
+

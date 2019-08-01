@@ -1,13 +1,7 @@
 .nav-wrapper {
-   background-color: #d71e2b;
-   border-bottom: 4px solid #fcc60a
-}
-
-.nav.wrapper {
-  padding: 1000px;
-  padding: 700px;
-  padding: 600px;
-  padding: 500px;
+   background-color: #0DCDFF;
+   border-bottom: 15px solid  #0C80E8;
+ 
 }
     
 
@@ -32,16 +26,56 @@
 
 .eng{
     background-color:#9E30FF
+    
 }
 
 .math{
-    background-color: #FF3827
+    background-color: #FF3827;
 }
 
 .login{
-    background-color:#E86FDF;
+   background-image:url("images/picture.jpg");
     
 }
-.page{
-    background-color: red;
+
+
+.logo{
+  font-family: 'Saira Stencil One', cursive !important;
+  background-color:#1E59E8 !important;
+
 }
+
+#mainPage{
+    background-color:#123456;
+}
+.card-content{
+    font-family: 'Anton', sans-serif;
+}
+#upload{
+    background-image:url("images/bgPic.jpg");
+}
+
+.mathTitle{
+  font-weight: bold;
+   font-family: "Times New Roman", Times, serif;
+   background-image:url("http://a.rgbimg.com/users/s/sh/shonna/300/p5V2Uhe.jpg");
+}
+
+.fintechTitle{
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  background-image: url("https://backgroundcheckall.com/wp-content/uploads/2018/10/blue-brick-background-9.jpg");
+ 
+}
+
+.englishTitle{
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    background-image: url("https://previews.123rf.com/images/wklzzz/wklzzz1606/wklzzz160600009/57726812-abstract-purple-rough-grunge-brick-wall-background.jpg");
+}
+
+.top{
+    border:dotted;
+    align-items: flex-end !important;
+}
+
