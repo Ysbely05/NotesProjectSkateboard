@@ -78,4 +78,6 @@
     border:dotted;
     align-items: flex-end !important;
 }
-
+.color{
+    font-color:blue;
+}
